@@ -88,19 +88,56 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: SourceSansPro-Light;
+    src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
+}
 
+body {
+    background: url("../img/first-page-bg.png") fixed center;
+    background-size: cover;
+    color: #333;
+    font-size: 1.4rem;
+    font-family: serif;
+}
 
+p {
+    font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif;
+}
 
+.first-page {
+    height: 100vh;
+}
 
+.first-page .header {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 36px;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
 
+.downward {
+    bottom: 5%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+}
 
-
-
-
-
-
-
-
+.description-page {
+    padding-top: 40px;
+    padding-bottom: 125px;
+    text-align: center;
+    background: #478FB5 url("../img/description-page-bg.jpg") bottom repeat-x;
+    color: #13293D;
+}
 
 
 
@@ -189,8 +226,8 @@ textarea {
 }
 
 @media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -207,8 +244,9 @@ textarea {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -230,7 +268,6 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -246,7 +283,6 @@ textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
