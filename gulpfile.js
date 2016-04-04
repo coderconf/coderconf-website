@@ -2,7 +2,6 @@ var fs = require('fs');
 var path = require('path');
 
 var gulp = require('gulp');
-var watch = require('gulp-watch');
 
 // Load all gulp plugins automatically
 // and attach them to the `plugins` object
@@ -102,7 +101,7 @@ gulp.task('copy:license', function () {
 
 gulp.task('copy:main.css', function () {
 
-    var banner = '/*! HTML5 Boilerplate v' + pkg.version +
+    var banner = '/*! Coder Conf v' + pkg.version +
                     ' | ' + pkg.license.type + ' License' +
                     ' | ' + pkg.homepage + ' */\n\n';
 
@@ -148,12 +147,6 @@ gulp.task('lint:js', function () {
       .pipe(plugins.jshint())
       .pipe(plugins.jshint.reporter('jshint-stylish'))
       .pipe(plugins.jshint.reporter('fail'));
-});
-
-gulp.task('stream', function () {
-    return gulp.src('src/*')
-        .pipe(watch('src/*'))
-        .pipe(gulp.dest('dist'));
 });
 
 // ---------------------------------------------------------------------

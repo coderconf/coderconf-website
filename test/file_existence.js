@@ -42,6 +42,25 @@ var expectedFilesInDistDir = [
 
     'img/',
         'img/.gitignore',
+        'img/first-page-bg.png',
+        'img/description-page-bg.jpg',
+        'img/bg.png',
+
+    'font/',
+        'font/source-sans-pro/',
+        'font/source-sans-pro/SIL Open Font License.txt',
+        'font/source-sans-pro/SourceSansPro-Black.otf',
+        'font/source-sans-pro/SourceSansPro-BlackIt.otf',
+        'font/source-sans-pro/SourceSansPro-Bold.otf',
+        'font/source-sans-pro/SourceSansPro-BoldIt.otf',
+        'font/source-sans-pro/SourceSansPro-ExtraLight.otf',
+        'font/source-sans-pro/SourceSansPro-ExtraLightIt.otf',
+        'font/source-sans-pro/SourceSansPro-It.otf',
+        'font/source-sans-pro/SourceSansPro-Light.otf',
+        'font/source-sans-pro/SourceSansPro-LightIt.otf',
+        'font/source-sans-pro/SourceSansPro-Regular.otf',
+        'font/source-sans-pro/SourceSansPro-Semibold.otf',
+        'font/source-sans-pro/SourceSansPro-SemiboldIt.otf',
 
     'index.html',
 
