@@ -161,7 +161,7 @@ p {
     color: #F9C711;
     text-shadow: 0 0 20px #000;
     font-size: 36px;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
 
@@ -180,8 +180,16 @@ p {
     text-shadow: 0 0 1px #000;
     text-align: center;
 }
-.article-page .mail {
+.article-page .submit-text {
     color: #f9fbff;
+    text-shadow: 0 0 1px #000;
+}
+.article-page .submit-text a {
+    color: #8dc5f4;
+    text-decoration: none;
+}
+.article-page .submit-text a:hover {
+    color: #709cc6;
     text-shadow: 0 0 1px #000;
 }
 
