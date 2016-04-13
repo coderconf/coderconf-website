@@ -88,58 +88,117 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@font-face {
+/*@font-face {
     font-family: SourceSansPro-Light;
     src: url("../font/source-sans-pro/SourceSansPro-Light.otf");
+}*/
+@font-face {
+    font-family:'iranian-sans';
+    src:url('../font/irsans/irsans.eot');
+    src:url('../font/irsans/irsans.woff') format('woff'),
+    url('../font/irsans/irsans.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal
 }
 
 body {
-    background: url("../img/first-page-bg.png") fixed center;
-    background-size: cover;
+    /*font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif; */
+    font-family: iranian-sans, tahoma;
+    font-size: 100%;
     color: #333;
-    font-size: 1.4rem;
+    direction: rtl;
+}
+
+h1 {
     font-family: serif;
+    font-size: 4rem;
+    line-height: 140%;
+}
+
+h2 {
+    font-size: 2.6rem;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 160%;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 170%;
+}
+
+h5 {
+    font-size: 1.6rem;
+    line-height: 180%;
+}
+
+h6 {
+    font-size: 1.4rem;
+    line-height: 180%;
 }
 
 p {
-    font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 180%;
 }
 
-.first-page {
+
+.caricature-page{
+    background: url("../img/caricature.jpg") top;
+    background-size: cover;
     height: 100vh;
 }
 
-.first-page .header {
-    position: absolute;
-    top: 45%;
+.first-page {
+    background: url("../img/first-page-bg.png") fixed center;
+    background-size: cover;
+    height: 100vh;
     text-align: center;
     width: 100%;
-    color: #fff;
+    color: #F9C711;
+    text-shadow: 0 0 20px #000;
     font-size: 36px;
-    -ms-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-}
-
-.downward {
-    bottom: 5%;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    color: #fff;
-    font-weight: bold;
-    font-size: 36px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .description-page {
-    padding-top: 40px;
-    padding-bottom: 125px;
+    padding: 40px 10vw 200px 10vw;
+    background: #588DB9 url("../img/description-page-bg.jpg") bottom repeat-x;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
     text-align: center;
-    background: #478FB5 url("../img/description-page-bg.jpg") bottom repeat-x;
-    color: #13293D;
+}
+
+.article-page {
+    padding: 40px 10vw;
+    background-color: #385472;
+    color: #89C0EE;
+    text-shadow: 0 0 1px #000;
+    text-align: center;
+}
+.article-page .mail {
+    color: #f9fbff;
+    text-shadow: 0 0 1px #000;
+}
+
+.coming-soon-page {
+    background: #eee url("../img/empty.png");
+    padding: 50px;
+    color: #363636;
+    text-align: center;
 }
 
 
+/*@media only screen and (max-width: 320px) {*/
+    /*p, h1, h3 {*/
+        /*font-size: 1.2rem;*/
+        /*line-height: 120%;*/
+    /*}*/
+/*}*/
 
 /* ==========================================================================
    Helper classes
