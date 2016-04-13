@@ -193,8 +193,37 @@ p {
     text-shadow: 0 0 1px #000;
 }
 
+
+.venue-page {
+    background: url("../img/sadra.jpg") bottom left;
+    background-size: cover;
+}
+.venue-page .venue-info {
+    width: 50vw;
+    width: 100vmin;
+    height: 400px;
+    background-color: rgba(249, 199, 17, 0.3);
+    /*background-color: rgba(109, 207, 246, 0.5);*/
+}
+.venue-page .venue-info .venue-text {
+    color: #182d3a;
+    /*color: #F9C711;*/
+    /*text-shadow: 0 0 1px #000;*/
+    padding: 20px;
+}
+
+.venue-page .map {
+    background: url("../img/map.png") center;
+    width: 50vw;
+    width: 100vmin;
+    height: 400px;
+    border: none;
+    display: block;
+    /*pointer-events: none;*/
+}
+
 .coming-soon-page {
-    background: #eee url("../img/empty.gif");
+    background: #eee url("../img/empty.gif") repeat;
     padding: 50px;
     color: #363636;
     text-align: center;
