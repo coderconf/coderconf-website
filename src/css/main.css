@@ -155,13 +155,13 @@ p {
 .first-page {
     background: url("../img/first-page-bg.png") fixed center;
     background-size: cover;
-    height: 100vh;
+    height: 65vh;
     text-align: center;
     width: 100%;
     color: #F9C711;
     text-shadow: 0 0 20px #000;
     font-size: 36px;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 60px;
 }
 
