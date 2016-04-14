@@ -146,11 +146,29 @@ p {
 }
 
 
-.caricature-page{
-    background: url("../img/caricature.jpg") top;
-    background-size: cover;
+.caricature-page {
+    background: #367497;
+    width: 100%;
     height: 100vh;
 }
+.caricature-page .caricature-image {
+    direction: ltr;
+    background: url("../img/caricature.png") no-repeat;
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .caricature-page .caricature-image {
+        background-size: cover;
+        width: 100%;
+    }
+    .caricature-page .caricature-image .eyes {
+        display: none;
+    }
+}
+
 
 .first-page {
     background: url("../img/first-page-bg.png") fixed center;
@@ -239,11 +257,6 @@ p {
 
 
 
-
-
-.caricature-page .eyes {
-    direction: ltr;
-}
 
 
 
