@@ -159,6 +159,16 @@ p {
     margin: 0 auto;
 }
 
+.caricature-page .caricature-image .click{
+    background: url("../img/caricature-click.png") no-repeat;
+    display: none;
+    position: relative;
+    top: 264px;
+    left: 240px ;
+    width: 16px;
+    height: 17px;
+}
+
 @media only screen and (max-width: 700px) {
     .caricature-page .caricature-image {
         background-size: cover;
@@ -168,7 +178,6 @@ p {
         display: none;
     }
 }
-
 
 .first-page {
     background: url("../img/first-page-bg.png") fixed center;
