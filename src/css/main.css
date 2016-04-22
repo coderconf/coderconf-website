@@ -193,11 +193,12 @@ p {
 }
 
 .description-page {
-    padding: 40px 10vw 200px 10vw;
+    padding: 40px 10vw 100px 10vw;
     background: #588DB9 url("../img/description-page-bg.jpg") bottom repeat-x;
     color: #fff;
     text-shadow: 0 0 1px #000;
     text-align: center;
+    /*text-align: justify;*/
 }
 
 .article-page {
@@ -206,6 +207,7 @@ p {
     color: #89C0EE;
     text-shadow: 0 0 1px #000;
     text-align: center;
+    /*text-align: justify;*/
 }
 .article-page .submit-text {
     color: #f9fbff;
@@ -220,6 +222,11 @@ p {
     text-shadow: 0 0 1px #000;
 }
 
+@media only screen and (max-width: 700px) {
+    .description-page, .article-page {
+        text-align: justify;
+    }
+}
 
 .venue-page {
     background: url("../img/sadra.jpg") bottom left;
@@ -257,83 +264,76 @@ p {
 }
 
 
-/*@media only screen and (max-width: 320px) {*/
-    /*p, h1, h3 {*/
-        /*font-size: 1.2rem;*/
-        /*line-height: 120%;*/
-    /*}*/
-/*}*/
-
-
-
 
 
 
 /*Board Chart*/
-.tree {
-    /*-webkit-transform: rotate(-90deg);*/
-    /*transform: rotate(-90deg);*/
-    /*-webkit-transform-origin:  50%;*/
-    /*transform-origin: 50%;*/
+.board-chart {
     font-family: sans-serif;
     font-size: 15px;
     text-shadow: none;
     direction: ltr;
 }
 
-.tree ul {
+@media only screen and (max-width: 700px) {
+    .board-chart {
+        display: none;
+    }
+}
+
+.board-chart ul {
     position: relative;
-    padding: 0em 0;
+    padding: 1em 0;
     white-space: nowrap;
     margin: 0 auto;
     text-align: center;
 }
-.tree ul::after {
-    content: '';g
+.board-chart ul::after {
+    content: '';
     display: table;
     clear: both;
 }
 
-.tree li {
+.board-chart li {
     display: inline-block;
     vertical-align: top;
     text-align: center;
     list-style-type: none;
     position: relative;
-    padding: 1em 0em 8em 0em;
+    padding: 1em 0.5em 1em 0.5em
 }
-.tree li::before, .tree li::after {
+.board-chart li::before, .board-chart li::after {
     content: '';
     position: absolute;
     top: 0;
     right: 50%;
     border-top: 1px solid #ccc;
-    width: 50%;
+    width: 53%;
     height: 1em;
 }
-.tree li::after {
+.board-chart li::after {
     right: auto;
     left: 50%;
     border-left: 1px solid #ccc;
 }
-.tree li:only-child::after, .tree li:only-child::before {
+.board-chart li:only-child::after, .board-chart li:only-child::before {
     display: none;
 }
-.tree li:only-child {
+.board-chart li:only-child {
     padding-top: 0;
 }
-.tree li:first-child::before, .tree li:last-child::after {
+.board-chart li:first-child::before, .board-chart li:last-child::after {
     border: 0 none;
 }
-.tree li:last-child::before {
+.board-chart li:last-child::before {
     border-right: 1px solid #ccc;
     border-radius: 0 5px 0 0;
 }
-.tree li:first-child::after {
+.board-chart li:first-child::after {
     border-radius: 5px 0 0 0;
 }
 
-.tree ul ul::before {
+.board-chart ul ul::before {
     content: '';
     position: absolute;
     top: 0;
@@ -343,31 +343,32 @@ p {
     height: 1em;
 }
 
-.tree li a {
+.board-chart li a {
     border: 1px solid #ccc;
     padding: .5em .75em;
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
-    color: #333;
+    /*color: #333;*/
+    color: #fff;
     position: relative;
     top: 1px;
     /*-webkit-transform: rotate(90deg);*/
     /*transform: rotate(90deg);*/
 }
 
-.tree li a:hover,
-.tree li a:hover + ul li a {
-    background: #e9453f;
-    color: #fff;
-    border: 1px solid #e9453f;
+.board-chart li a:hover,
+.board-chart li a:hover + ul li a {
+    background: #f4c311;
+    /*color: #fff;*/
+    border: 1px solid #f4c311;
 }
 
-.tree li a:hover + ul li::after,
-.tree li a:hover + ul li::before,
-.tree li a:hover + ul::before,
-.tree li a:hover + ul ul::before {
-    border-color: #e9453f;
+.board-chart li a:hover + ul li::after,
+.board-chart li a:hover + ul li::before,
+.board-chart li a:hover + ul::before,
+.board-chart li a:hover + ul ul::before {
+    border-color: #f4c311;
 }
 
 
