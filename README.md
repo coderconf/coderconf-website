@@ -38,15 +38,6 @@ Conference website powered by HTML5 Boilerplate
 Help improve these docs. Open an issue or submit a pull request.
 
 
-## TODO
-[] Meta tags and finalize
-[] Contact
-[] Reviewer avatar
-[] Social link
-[] Language link
-[] English template
-
-
 
 ## License
 

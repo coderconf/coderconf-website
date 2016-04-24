@@ -146,6 +146,9 @@ p {
 }
 
 
+
+
+
 .caricature-page {
     background: #367497;
     width: 100%;
@@ -233,8 +236,7 @@ p {
     background-size: cover;
 }
 .venue-page .venue-info {
-    width: 50vw;
-    width: 100vmin;
+    width: 97vmin;
     height: 400px;
     background-color: rgba(249, 199, 17, 0.3);
     /*background-color: rgba(109, 207, 246, 0.5);*/
@@ -248,13 +250,14 @@ p {
 
 .venue-page .map {
     background: url("../img/map.png") center;
-    width: 50vw;
-    width: 100vmin;
+    width: 97vmin;
     height: 400px;
     border: none;
     display: block;
     /*pointer-events: none;*/
 }
+
+
 
 .coming-soon-page {
     background: #eee url("../img/empty.gif") repeat;
@@ -265,17 +268,19 @@ p {
     text-align: center;
 }
 
+
+
 .contact-page {
     background: url("../img/first-page-bg.png") fixed center;
     background-size: cover;
     height: 100vh;
     text-align: center;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 20vh;
     direction: ltr;
 }
 .contact-page ul {
-    width: 600px;
+    display: inline-block;
     margin: 0 auto;
     text-align: left;
 }
@@ -287,8 +292,10 @@ p {
     text-decoration: none;
     color: #F9C711;
     text-shadow: 0 0 20px #000;
-    font-size: 36px;
+    font-size: 1.2rem;
 }
+
+
 
 
 
