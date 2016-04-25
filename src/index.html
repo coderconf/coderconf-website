@@ -45,7 +45,7 @@
 
         <div class="languages">
             <ul>
-                <li class="active"><a href="en"><img src="img/persian.png"/> Persian</a></li>
+                <li class="active"><a href="#"><img src="img/persian.png"/> Persian</a></li>
                 <li class="inactive"><a href="en"><img src="img/english.png"/> English</a></li>
             </ul>
         </div>
@@ -120,14 +120,10 @@
         </section>
 
 
-        <!--<section class="coming-soon-page">
-            <h3>به زودی اطلاعات تکمیلی منتشر می‌شود.</h3>
-        </section>-->
-
         <section class="contact-page">
             <i class="icon icon-chat1"></i>
             <ul>
-                <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01U3qq6mU_DOpc3KCp-AooUg==&amp;c=mNTuyfmu5js18rByH8crPVC1p30lepBgJMTwhaeETgU=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501U3qq6mU_DOpc3KCp-AooUg\75\75\46c\75mNTuyfmu5js18rByH8crPVC1p30lepBgJMTwhaeETgU\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address"><i class="icon-email"></i> info [at] coderconf [dot] ir</a></li>
+                <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01U3qq6mU_DOpc3KCp-AooUg==&amp;c=mNTuyfmu5js18rByH8crPVC1p30lepBgJMTwhaeETgU=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501U3qq6mU_DOpc3KCp-AooUg\75\75\46c\75mNTuyfmu5js18rByH8crPVC1p30lepBgJMTwhaeETgU\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address"><i class="icon-email"></i> info [at] coderconf [dot] org</a></li>
                 <li><a href="http://facebook.com/coderconf" target="_blank"><i class="icon-facebook-rect"></i> http://facebook.com/coderconf</a></li>
                 <li><a href="http://twitter.com/coderconf" target="_blank"><i class="icon-twitter-rect"></i> http://twitter.com/coder_conf</a></li>
                 <li><a href="http://instagram.com/coderconf" target="_blank"><i class="icon-instagram"></i> http://instagram.com/coderconf</a></li>
@@ -137,6 +133,13 @@
             </ul>
         </section>
 
+        <section class="coming-soon-page">
+            <p>به زودی اطلاعات تکمیلی منتشر می‌شود.</p>
+        </section>
+
+        <!--<section class="footer">
+        </section>-->
+
 
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
@@ -145,20 +148,11 @@
 
 
         <script>
-            $(document).ready(function() {
+            $(window).load(function() {
+                window.scrollTo(0, 0);
                 $(".loading").fadeOut('slow');
             });
         </script>
 
-
-        <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-57178802-2','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
