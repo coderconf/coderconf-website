@@ -56,8 +56,8 @@ if($(window).width() >= 700) {
             pupil.css({left:xp, top:yp});
         }, 1);
     };
-    var eyeLeft = new DrawEye("eyeLeft", "pupilLeft", 252, 76.5, 12);
-    var eyeRight = new DrawEye("eyeRight", "pupilRight", 278, 69, 12);
+    var eyeLeft = new DrawEye("eyeLeft", "pupilLeft", 250, 88, 12.5);
+    var eyeRight = new DrawEye("eyeRight", "pupilRight", 278, 80, 12.5);
 
     
 

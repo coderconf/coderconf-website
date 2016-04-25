@@ -166,15 +166,16 @@ p {
     background: url("../img/caricature-click.png") no-repeat;
     display: none;
     position: relative;
-    top: 264px;
-    left: 240px ;
-    width: 16px;
-    height: 17px;
+    top: 291px;
+    left: 238px ;
+    width: 17px;
+    height: 20px;
 }
 
 @media only screen and (max-width: 700px) {
     .caricature-page .caricature-image {
         background-size: cover;
+        background-position: center;
         width: 100%;
     }
     .caricature-page .caricature-image .eyes {
@@ -211,6 +212,9 @@ p {
     text-shadow: 0 0 1px #000;
     text-align: center;
     /*text-align: justify;*/
+}
+.article-page strong {
+    color: #fff;
 }
 .article-page .submit-text {
     color: #f9fbff;
