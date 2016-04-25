@@ -83,3 +83,10 @@ if($(window).width() >= 700) {
     
 }
 
+
+$('.languages').mouseenter(function() {
+    $('.languages ul .inactive').slideDown('slow');
+});
+$('.languages').mouseleave(function() {
+    $('.languages ul .inactive').slideUp('slow');
+});

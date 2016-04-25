@@ -427,8 +427,33 @@ right connector from last child*/
 
 
 
-
-
+.languages {
+    direction: ltr;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border: 1px solid #b4b4b4;
+    border-radius: 3px;
+}
+.languages ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px 8px;
+}
+.languages ul a {
+    color: #fff;
+    text-decoration: none;
+}
+.languages ul a img {
+    width: 20px;
+    vertical-align: baseline;
+}
+.languages ul li {
+    display: none;
+}
+.languages ul .active {
+    display: inline-block;
+}
 
 
 
