@@ -85,8 +85,8 @@ if($(window).width() >= 700) {
 
 
 $('.languages').mouseenter(function() {
-    $('.languages ul .inactive').slideDown('slow');
+    $('.languages ul .inactive').slideDown();
 });
 $('.languages').mouseleave(function() {
-    $('.languages ul .inactive').slideUp('slow');
+    $('.languages ul .inactive').slideUp();
 });
