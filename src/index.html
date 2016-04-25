@@ -38,6 +38,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="loading">
+            <div class="cssload-loader"></div>
+        </div>
+
+
         <section class="caricature-page">
             <div class="caricature-image">
                 <div class="eyes"></div>
@@ -131,6 +136,12 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+
+        <script>
+            $(document).ready(function() {
+                $(".loading").fadeOut('slow');
+            });
+        </script>
 
 
         <!-- Google Analytics -->
