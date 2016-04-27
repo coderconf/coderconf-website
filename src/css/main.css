@@ -210,13 +210,37 @@ p {
     }
 }
 
+
+
+@keyframes move {
+    0% {
+        background-position: 0 60%, 0 50%;
+    }
+    100% {
+        background-position: 0 60%, 100% 50%;
+    }
+}
+
+.bg-animation {
+    background-color: #fff;
+    background-image: url('../img/network.svg'), radial-gradient(200px 1000px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
+    background-size: 125%, 50% 100%;
+    background-position: 0 60%, 0 100%;
+    animation: move 5s linear infinite;
+
+    box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+    border: 2px solid #fff;
+    border-right: 0;
+    border-left: 0;
+}
+
 .first-page {
     /*background: url("../img/first-page-bg.jpg") fixed center;*/
     /*background-size: cover;*/
     text-align: center;
     width: 100%;
-    color: #F9C711;
-    text-shadow: 0 0 20px #000;
+    color: #000;
+    text-shadow: 0 0 60px #000;
     font-size: 36px;
 }
 
@@ -230,6 +254,7 @@ p {
     color: #b5dcfb;
     text-shadow: 0 0 1px #000;
     text-align: center;
+    min-height: inherit;
 }
 .article-page strong {
     color: #fff;
@@ -261,13 +286,15 @@ p {
 }
 
 .poster-page {
-    background-color: #1B475C;
+    /*background-color: #1B475C;*/
+    background-color: #0C495A;
     color: #fff;
     text-align: center;
 }
 
 .poster-page img {
-    background-color: #1B475C;
+    /*background-color: #1B475C;*/
+    background-color: #0C495A;
     color: #fff;
     text-align: center;
     border-radius: 3px;
@@ -310,9 +337,60 @@ p {
 
 
 
+
+
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.demo .large-header {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .demo .main-title {
+        font-size: 3em;
+    }
+}
+
+
+
+
 .contact-page {
     /*background: url("../img/first-page-bg.jpg") center;*/
+    /*background: url("../img/bg1.jpg") center;*/
     /*background-size: cover;*/
+    /*background-color: #FAFBFD;*/
+    /*background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjZjhkMjAzIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZjYyOSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZTUwMyIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");*/
     text-align: center;
     direction: ltr;
 }
@@ -327,9 +405,11 @@ p {
 }
 .contact-page ul a {
     text-decoration: none;
-    color: #F9C711;
-    text-shadow: 0 0 20px #000;
-    font-size: 1.2rem;
+    /*color: #000;*/
+    color: #444;
+    /*color: #F9C711;*/
+    /*text-shadow: 0 0 20px #000;*/
+    font-size: 1.6rem;
 }
 
 
@@ -337,42 +417,13 @@ p {
     border-top: 1px solid #1B475C;
 }
 .footer p {
+    letter-spacing: 0.1em;
     text-align: center;
     font-size: 10px;
     margin: 3px;
     color: #fff;
 }
 
-
-
-
-
-
-
-
-@keyframes move {
-    0% {
-        background-position: 0 60%, 0 50%;
-    }
-    100% {
-        background-position: 0 60%, 100% 50%;
-    }
-}
-
-.bg-animation {
-    background-color: #367497;
-    background-image: url('../img/network.svg'), radial-gradient(200px 500px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
-    background-size: 125%, 50% 100%;
-    background-position: 0 60%, 0 100%;
-    animation: move 5s linear infinite;
-
-    /* Extra Styles */
-    /*height: 300px;*/
-    /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
-    /*border: 2px solid #fff;*/
-    /*border-right: 0;*/
-    /*border-left: 0;*/
-}
 
 
 
