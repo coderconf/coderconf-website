@@ -103,55 +103,82 @@ textarea {
 
 body {
     /*font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif; */
-    font-family: iranian-sans, tahoma;
+    font-family: iranian-sans, sans-serif;
     font-size: 100%;
+    background-color: #367497;
     color: #333;
     direction: rtl;
+    overflow-x: hidden;
 }
 
 h1 {
     font-family: serif;
     font-size: 4rem;
     line-height: 140%;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 h2 {
     font-size: 2.6rem;
     line-height: 150%;
-}
+    margin-left: 10vh;
+    margin-right: 10vh;}
 
 h3 {
     font-size: 2.2rem;
     line-height: 160%;
-}
+    margin-left: 10vh;
+    margin-right: 10vh;}
 
 h4 {
     font-size: 1.8rem;
     line-height: 170%;
-}
+    margin-left: 10vh;
+    margin-right: 10vh;}
 
 h5 {
     font-size: 1.6rem;
     line-height: 180%;
-}
+    margin-left: 10vh;
+    margin-right: 10vh;}
 
 h6 {
     font-size: 1.4rem;
     line-height: 180%;
-}
+    margin-left: 10vh;
+    margin-right: 10vh;}
 
 p {
     font-size: 1.4rem;
     line-height: 180%;
+    margin-left: 10vh;
+    margin-right: 10vh;}
+
+
+
+
+
+.page {
+    width: 100%;
+    min-height: 100vh;
 }
 
+.free-space-10 {
+    height: 10vh;
+    /*border: 1px solid red;*/
+}
 
+.divider {
+    border-top: 1px dashed #fff;
+}
 
-
+.clear {
+    clear: both;
+    height: 50px;
+}
 
 .caricature-page {
-    background: #367497;
-    width: 100%;
     height: 100vh;
 }
 .caricature-page .caricature-image {
@@ -184,34 +211,25 @@ p {
 }
 
 .first-page {
-    background: url("../img/first-page-bg.png") fixed center;
-    background-size: cover;
-    height: 65vh;
+    /*background: url("../img/first-page-bg.jpg") fixed center;*/
+    /*background-size: cover;*/
     text-align: center;
     width: 100%;
     color: #F9C711;
     text-shadow: 0 0 20px #000;
     font-size: 36px;
-    padding-top: 200px;
-    padding-bottom: 60px;
 }
 
 .description-page {
-    padding: 40px 10vw 200px 10vw;
-    background: #588DB9 url("../img/description-page-bg.jpg") bottom repeat-x;
     color: #fff;
     text-shadow: 0 0 1px #000;
     text-align: center;
-    /*text-align: justify;*/
 }
 
 .article-page {
-    padding: 40px 10vw;
-    background-color: #385472;
-    color: #89C0EE;
+    color: #b5dcfb;
     text-shadow: 0 0 1px #000;
     text-align: center;
-    /*text-align: justify;*/
 }
 .article-page strong {
     color: #fff;
@@ -235,52 +253,67 @@ p {
     }
 }
 
+.iran-symbol {
+    background: url("../img/iran.cover.2.png") bottom no-repeat;
+    background-size: contain;
+    height: 100vh;
+    max-height: 400px;
+}
+
+.poster-page {
+    background-color: #1B475C;
+    color: #fff;
+    text-align: center;
+}
+
+.poster-page img {
+    background-color: #1B475C;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
 .venue-page {
-    background: url("../img/sadra.jpg") bottom left;
+    /*background: url("../img/sadra.jpg") bottom left;*/
+    background: url("../img/first-page-bg.jpg") fixed center;;
     background-size: cover;
 }
 .venue-page .venue-info {
     width: 97vmin;
-    height: 400px;
+    height: 50vh;
     background-color: rgba(249, 199, 17, 0.3);
     /*background-color: rgba(109, 207, 246, 0.5);*/
 }
 .venue-page .venue-info .venue-text {
-    color: #182d3a;
+    color: #000;
     /*color: #F9C711;*/
     /*text-shadow: 0 0 1px #000;*/
-    padding: 20px;
+    padding: 10px;
 }
+
 
 .venue-page .map {
-    background: url("../img/map.png") center;
+    background: url("../img/map.jpg") center;
     width: 97vmin;
-    height: 400px;
+    height: 50vh;
     border: none;
     display: block;
-    /*pointer-events: none;*/
 }
-
 
 
 .coming-soon-page {
-    background: #eee url("../img/empty.gif") repeat;
-    padding: 50px;
+    background: #eee url("../img/empty.gif") repeat fixed;
     /*color: #363636;*/
-    color: #F9C711;
-    text-shadow: 0 0 8px #000;
+    text-shadow: 0 0 8px #fff;
     text-align: center;
 }
 
 
 
 .contact-page {
-    background: url("../img/first-page-bg.png") fixed center;
-    background-size: cover;
-    height: 100vh;
+    /*background: url("../img/first-page-bg.jpg") center;*/
+    /*background-size: cover;*/
     text-align: center;
-    width: 100%;
-    padding-top: 20vh;
     direction: ltr;
 }
 .contact-page ul {
@@ -300,6 +333,50 @@ p {
 }
 
 
+.footer {
+    border-top: 1px solid #1B475C;
+}
+.footer p {
+    text-align: center;
+    font-size: 10px;
+    margin: 3px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@keyframes move {
+    0% {
+        background-position: 0 60%, 0 50%;
+    }
+    100% {
+        background-position: 0 60%, 100% 50%;
+    }
+}
+
+.bg-animation {
+    background-color: #367497;
+    background-image: url('../img/network.svg'), radial-gradient(200px 500px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
+    background-size: 125%, 50% 100%;
+    background-position: 0 60%, 0 100%;
+    animation: move 5s linear infinite;
+
+    /* Extra Styles */
+    /*height: 300px;*/
+    /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
+    /*border: 2px solid #fff;*/
+    /*border-right: 0;*/
+    /*border-left: 0;*/
+}
+
+
+
+
 
 
 
@@ -307,9 +384,7 @@ p {
 .board-chart {
     text-shadow: none;
     direction: ltr;
-    display: block;
-    height: 200px;
-    width: 650px;
+    width: 700px;
     margin: 0 auto;
 
 }
@@ -347,12 +422,12 @@ p {
 .board-chart li::before, .board-chart li::after{
     content: '';
     position: absolute; top: 0; right: 50%;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #F9C711;
     width: 50%; height: 20px;
 }
 .board-chart li::after{
     right: auto; left: 50%;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #F9C711;
 }
 
 /*We need to remove left-right connectors from elements without
@@ -371,7 +446,7 @@ right connector from last child*/
 }
 /*Adding back the vertical connector to the last nodes*/
 .board-chart li:last-child::before{
-    border-right: 1px solid #fff;
+    border-right: 1px solid #F9C711;
     border-radius: 0 5px 0 0;
     -webkit-border-radius: 0 5px 0 0;
     -moz-border-radius: 0 5px 0 0;
@@ -386,15 +461,16 @@ right connector from last child*/
 .board-chart ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #F9C711;
     width: 0; height: 20px;
 }
 
 .board-chart li a{
-    border: 1px solid #fff;
+    border: 1px solid #F9C711;
     padding: 5px 10px;
     text-decoration: none;
-    /*color: #666;*/
+    color: #000000;
+    background-color: #F9C711;
     /*font-family: arial, verdana, tahoma;*/
     font-size: 20px;
     display: inline-block;
@@ -412,14 +488,16 @@ right connector from last child*/
 /*We will apply the hover effect the the lineage of the element also*/
 .board-chart li a:hover, .board-chart li a:hover+ul li a {
     /*background: #c8e4f8; color: #000; border: 1px solid #94a0b4;*/
-    background: #F9C711; color: #000; border: 1px solid #F9C711;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
 }
 /*Connector styles on hover*/
 .board-chart li a:hover+ul li::after,
 .board-chart li a:hover+ul li::before,
 .board-chart li a:hover+ul::before,
 .board-chart li a:hover+ul ul::before{
-    border-color:  #F9C711;
+    border-color:  #fff;
 }
 
 
@@ -434,6 +512,9 @@ right connector from last child*/
     left: 10px;
     border: 1px solid #b4b4b4;
     border-radius: 3px;
+}
+.languages:hover {
+    border: 1px solid #ffffff;
 }
 .languages ul {
     list-style: none;
