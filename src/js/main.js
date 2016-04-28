@@ -97,17 +97,158 @@ $('.languages .active a').click(function () {
 
 
 
+// Google map
+var map;
+function initMap() {
+
+    var myLatLng = {lat: 35.7537000, lng: 51.3963000};
+
+    
+    // Specify features and elements to define styles.
+    var styleArray = [
+        {
+            "featureType": "water",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "color": "#b5cbe4"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "stylers": [
+                {
+                    "color": "#efefef"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#83a5b0"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#bdcdd3"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#e3eed3"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "lightness": 33
+                }
+            ]
+        },
+        {
+            "featureType": "road"
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "visibility": "on"
+                },
+                {
+                    "lightness": 20
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "stylers": [
+                {
+                    "lightness": 20
+                }
+            ]
+        }
+    ];
+
+
+
+    // Init map
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 16,
+        scrollwheel: false,
+        styles: styleArray
+    });
+    
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+        map: map,
+        position: myLatLng,
+        title: 'مرکز همایش‌های صدرا'
+    });
+    // marker.setAnimation(google.maps.Animation.BOUNCE);
+
+
+    var contentString = '<div class="mapMarkerContent">'+
+        '<p><strong>مرکز همایش‌های صدرا</strong><hr/>تهران، میدان ونک، خیابان ملاصدرا، خیابان شیخ بهایی جنوبی</p>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'مرکز همایش‌های صدرا'
+    });
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+
+}
 
 
 
 
 
-// (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-//     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-//     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-//     e.src='https://www.google-analytics.com/analytics.js';
-//     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-// ga('create','UA-57178802-2','auto');ga('send','pageview');
+
+
+
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-57178802-2','auto');ga('send','pageview');
 
 
 
