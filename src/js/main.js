@@ -78,6 +78,11 @@ if ($(window).width() >= 700) {
         }, 200);
     }, 2000);
 
+
+
+    //Active animation
+   $(document).animateScroll();
+
 }
 
 
