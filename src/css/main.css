@@ -108,13 +108,14 @@ body {
     /*font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif; */
     font-family: iranian-sans, sans-serif;
     font-size: 100%;
-    background-color: #367497;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#277297+0,8aa4aa+67,4b849c+100 */
-    /*background: #277297; !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  #277297 0%, #8aa4aa 67%, #4b849c 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  #277297 0%,#8aa4aa 67%,#4b849c 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  #277297 0%,#8aa4aa 67%,#4b849c 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#277297', endColorstr='#4b849c',GradientType=0 ); !* IE6-9 *!*/
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#277297+0,4696aa+70,277297+100 */
+    background: #277297; /* Old browsers */
+    background: -moz-linear-gradient(top,  #277297 0%, #4696aa 70%, #277297 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #277297 0%,#4696aa 70%,#277297 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #277297 0%,#4696aa 70%,#277297 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#277297', endColorstr='#277297',GradientType=0 ); /* IE6-9 */
+
 
 
     color: #333;
@@ -124,14 +125,14 @@ body {
 
 h1 {
     font-family: serif;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 140%;
     margin-left: 10vh;
     margin-right: 10vh;
 }
 
 h2 {
-    font-size: 2.6rem;
+    font-size: 3rem;
     line-height: 150%;
     margin-left: 10vh;
     margin-right: 10vh;}
@@ -210,6 +211,7 @@ p {
     height: 20px;
 }
 
+
 @media only screen and (max-width: 700px) {
     .caricature-page .caricature-image {
         background-size: cover;
@@ -236,7 +238,7 @@ p {
     background-color: #55D0F7;
     /*background-image: url('../img/network.svg'), radial-gradient(200px 1000px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));*/
     background-image: url('../img/network.svg'), radial-gradient(200px 1000px at center, #ff450a 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
-    background-size: 125%, 50% 100%;
+    background-size: 60%, 50% 100%;
     background-position: 0 80%, 0 100%;
     animation: move 5s linear infinite;
 
@@ -324,11 +326,19 @@ p {
     border-radius: 3px;
 }
 
+@media only screen and (max-width: 700px) {
+    .poster-page img {
+        width: 60vw;
+    }
+}
+
 
 .venue-page {
     width: 100%;
     height: 50vh;
-    min-height: 400px;
+    min-height: 500px;
+}
+.venue-page p {
     color: #fff;
     text-shadow: 0 0 1px #000;
 }
@@ -342,14 +352,15 @@ p {
 
 .coming-soon-page {
     background: #eee url("../img/empty.gif") repeat fixed;
-    /*color: #363636;*/
-    text-shadow: 0 0 8px #fff;
+    color: #363636;
+    /*text-shadow: 0 0 8px #fff;*/
     text-align: center;
 }
 
 
 
 .contact-page {
+    background: #277297;
     text-align: center;
 }
 .contact-page ul {
