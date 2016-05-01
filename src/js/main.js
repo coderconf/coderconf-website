@@ -210,6 +210,7 @@ function initMap() {
         center: myLatLng,
         zoom: 16,
         scrollwheel: false,
+        draggable: !("ontouchend" in document),
         styles: styleArray
     });
     
