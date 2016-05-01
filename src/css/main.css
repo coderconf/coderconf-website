@@ -589,12 +589,16 @@ right connector from last child*/
     height: 100vh;
     background-color: #367497;
 }
-
+.loading p {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
 .cssload-loader {
     width: 146px;
     height: 146px;
     line-height: 146px;
-    margin: 100px auto;
+    margin: 100px auto 50px;
     position: relative;
     box-sizing: border-box;
     text-align: center;

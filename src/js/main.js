@@ -81,8 +81,9 @@ if ($(window).width() >= 700) {
 
 
     //Active animation
-   $(document).animateScroll();
-
+    $(window).load(function() {
+        $(document).animateScroll();
+    });
 }
 
 
