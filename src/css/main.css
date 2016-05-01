@@ -182,7 +182,8 @@ p {
 }
 
 .divider {
-    border-top: 1px dashed #fff;
+    /*border-top: 1px dashed #fff;*/
+    border-top: 1px solid #55D0F7;
 }
 
 .clear {
@@ -247,7 +248,9 @@ p {
     /*border-right: 0;*/
     /*border-left: 0;*/
 
-    border: 1px solid #55D0F7;
+    /*border: 1px solid #55D0F7;*/
+    /*border: 1px solid #55D0F7;*/
+
     border-right: 0;
     border-left: 0;
 
@@ -271,6 +274,7 @@ p {
 }
 
 .description-page {
+    background-color: #277297;
     color: #fff;
     text-shadow: 0 0 1px #000;
     text-align: center;
@@ -399,18 +403,13 @@ p {
 
 
 .footer {
-    /*border-top: 1px solid #F9C711;*/
-    border-top: 1px dashed #fff;
-    border-bottom: 1px solid #295973;
     background-color: #295973;
-    /*border-bottom: 1px solid #295973;*/
-    /*background-color: #295973;*/
 }
 .footer p {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
     text-align: center;
     font-size: 10px;
-    margin: 3px;
+    margin: 0 15px;
     color: #fff;
 }
 
